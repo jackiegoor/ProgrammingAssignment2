@@ -1,6 +1,3 @@
-## Put comments here that give an overall description of what your
-## functions do
-
 ## makeCacheMatrix creates a special matrix object that can cache its inverse.
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
@@ -17,6 +14,7 @@ makeCacheMatrix <- function(x = matrix()) {
         
         getInverse <- function() m
         
+        # Return the list containing the 4 functions.
         list(set = set, get = get,
              setInverse = setInverse,
              getInverse = getInverse)
